@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiko:wght@400;700&family=Assistant:wght@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**a {
+  color: #000000;
+  text-decoration: none;
+}**/
+
+/* PÀGINA PRINCIPAL */
+.benvinguda {
+  height: 100vh;
+  margin: 0 auto; /* la centra si la pantalla és més ampla */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-fons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.6);
+}
+
+.container {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  gap: 25px;
+}
+
+.nom {
+  color: #fff;
+  font-family: Amiko;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cognom {
+  color: #949494;
+  font-family: Amiko;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* PÀGINA DE PROJECTES */
+.projectes {
+  background: #ffffff;
+  height: 100vh;
+}
+
+/* CAPÇALERA */
+.capcalera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6.61% 6.68% 0;
+}
+
+.logo {
+  color: var(--Negre, #000);
+  font-family: Amiko;
+  font-size: 2.12vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu {
+  color: var(--Negre, #000);
+  font-family: Assistant;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 3.31vw;
+}
+.menu a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* GALERIA */
+
+/*
+.imatges {
+  display: flex;
+  width: 425px;
+  height: 219px;
+  gap: 60px;
+  width: max-content;
+}*/
+
+.projecte {
+  position: relative;
+}
+
+.projecte img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* 10px */
+  display: block;
+}
+
+/* CANVI DE FOTO AL PASSAR EL CURSOR PER DAMUNT */
+.foto-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.projecte:hover .foto-2 {
+  opacity: 1;
+}
+
+/* PÀGINA QUI SÓC */
+.qui-soc {
+  background: #ffffff;
+  height: 100vh;
+  position: relative;
+}
+
+.qui-soc-contingut {
+  display: flex;
+  margin-top: 125px;
+  padding-left: 441px;
+  padding-right: 441px;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.qui-soc-text {
+  color: #000;
+  text-align: justify;
+  font-family: Amiko;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* PÀGINA CONTACTE */
+.contacte {
+  background: #ffffff;
+  position: relative;
+}
+
+.contacte-contingut {
+  margin: 284px auto 0;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 5.83%;
+  align-items: center; /* el text queda al mig de la foto */
+}
+
+.contacte-text {
+  margin-right: 7.08%;
+}
+
+.contacte-titol {
+  color: var(--Negre, #000);
+  font-family: Amiko;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contacte-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacte-dada {
+  color: var(--GRIS, #b7b7b7);
+  font-family: Amiko;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contacte-dada a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contacte-etiqueta {
+  color: #000;
+  font-family: Amiko;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.contacte-etiqueta-segona {
+  color: #000;
+  font-family: Amiko;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.contacte-foto {
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  padding-top: 100px;
+}
+.swiper-wrapper {
+  width: 100%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+.swiper-pagination {
+  display: none;
+}
+
+/*PROJECTE DANPE*/
+.projecte-danpe {
+  background: #fff;
+  color: #000;
+  font-family: "Assistant", sans-serif;
+}
+/* Títol + info */
+.capçalera-projecte-danpe {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 24px 181px 0 174px;
+}
+.projecte-titol {
+  margin: 0;
+  font-family: Assistant;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+/* Taula d'informació */
+.projecte-info {
+  width: 542px;
+}
+
+.projecte-funció1,
+.projecte-funció2 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+
+.projecte-etiqueta,
+.projecte-dada {
+  margin: 0;
+  font-size: 24px;
+}
+
+.projecte-etiqueta {
+  font-weight: 200;
+  padding-left: 10px;
+  font-family: Assistant;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.projecte-dada {
+  font-weight: 700;
+  font-family: Assistant;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Fotos */
+.projectedanpe-fotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 36px;
+  row-gap: 35px;
+  margin: 37px 189px 100px 174px;
+}
+
+.projectedanpe-fotos img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 556 / 371;
+  object-fit: cover;
+}
+
+.enrere {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin-top: -7px;
+  margin-right: 3px;
+  color: #000;
+}
+
+.enrere img,
+.enrere svg {
+  display: block;
+  width: 45px;
+  height: 45px;
+}
